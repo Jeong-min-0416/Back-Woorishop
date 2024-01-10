@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.woorishop.woorishop.WoorishopApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-01-09T09:19:03" hostname="webserver" time="0.339">
+<testsuite name="com.woorishop.woorishop.WoorishopApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-01-09T09:27:16" hostname="webserver" time="0.343">
   <properties/>
-  <testcase name="contextLoads()" classname="com.woorishop.woorishop.WoorishopApplicationTests" time="0.339"/>
-  <system-out><![CDATA[18:19:03.156 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.woorishop.woorishop.WoorishopApplicationTests]: WoorishopApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-18:19:03.184 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.woorishop.woorishop.WoorishopApplication for test class com.woorishop.woorishop.WoorishopApplicationTests
+  <testcase name="contextLoads()" classname="com.woorishop.woorishop.WoorishopApplicationTests" time="0.343"/>
+  <system-out><![CDATA[18:27:16.434 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.woorishop.woorishop.WoorishopApplicationTests]: WoorishopApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+18:27:16.464 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.woorishop.woorishop.WoorishopApplication for test class com.woorishop.woorishop.WoorishopApplicationTests
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -13,9 +13,9 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.2.1)
 
-2024-01-09T18:19:03.298+09:00  INFO 1404435 --- [    Test worker] c.w.woorishop.WoorishopApplicationTests  : Starting WoorishopApplicationTests using Java 17.0.9 with PID 1404435 (started by leejeongmin in /home/leejeongmin/Desktop/Back-Woorishop)
-2024-01-09T18:19:03.299+09:00  INFO 1404435 --- [    Test worker] c.w.woorishop.WoorishopApplicationTests  : No active profile set, falling back to 1 default profile: "default"
-2024-01-09T18:19:03.445+09:00  INFO 1404435 --- [    Test worker] c.w.woorishop.WoorishopApplicationTests  : Started WoorishopApplicationTests in 0.223 seconds (process running for 0.56)
+2024-01-09T18:27:16.574+09:00  INFO 1437013 --- [    Test worker] c.w.woorishop.WoorishopApplicationTests  : Starting WoorishopApplicationTests using Java 17.0.9 with PID 1437013 (started by leejeongmin in /home/leejeongmin/Desktop/Back-Woorishop)
+2024-01-09T18:27:16.575+09:00  INFO 1437013 --- [    Test worker] c.w.woorishop.WoorishopApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2024-01-09T18:27:16.920+09:00  INFO 1437013 --- [    Test worker] c.w.woorishop.WoorishopApplicationTests  : Started WoorishopApplicationTests in 0.415 seconds (process running for 0.733)
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
