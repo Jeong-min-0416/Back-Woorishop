@@ -1,6 +1,7 @@
 package com.woorishop.woorishop.list.service;
 
 import java.util.Arrays;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -13,7 +14,7 @@ import com.woorishop.woorishop.list.domain.Product;
 public class ProductService {
 
     public Map<String, List<Product>> getProductsGroupedByCategory() {
-        List<Product> 전체상품목록 = Arrays.asList(
+        List<Product> allProducts = Arrays.asList(
                 /* 인기상품 */
                 new Product(1, "Product 1", 10.000, "인기상품"),
                 new Product(2, "Product 2", 20.000, "인기상품"),
@@ -137,10 +138,10 @@ public class ProductService {
                 new Product(10, "Product 10", 100.000, "기능성벨트/의류")
         );
 
-        // 상품을 카테고리로 그룹화
-        Map<String, List<Product>> 그룹화된상품목록 = 전체상품목록.stream()
-                .collect(Collectors.groupingBy(Product::getCategory));
+        // 상품을 카테고리로 그룹화 (LinkedHashMap 사용하여 순서 유지)
+        Map<String, List<Product>> groupedProducts = allProducts.stream()
+                .collect(Collectors.groupingBy(Product::getCategory, LinkedHashMap::new, Collectors.toList()));
 
-        return 그룹화된상품목록;
+        return groupedProducts;
     }
 }
